@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Markdown Editor</title>
+</head>
+<body ng-app="markdown-editor">
+
+  <!-- Root component -->
+  <app></app>
+  
+  <!-- Markdown parse: https://github.com/chjj/marked -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js" ></script>
+
+  <!-- Angular required scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js" ></script>
+  <script src="https://code.angularjs.org/1.6.1/angular-sanitize.min.js"></script>
+
+  <!-- Root module -->
+  <script src="app/app.module.js"></script>
+
+  <!-- Root component  -->
+  <script src="app/app.component.js"></script>
+
+  <!-- Components module -->
+  <script src="app/components/components.module.js"></script>
+
+  <!-- Stateful component  -->
+  <script src="app/components/editor/editor.module.js"></script>
+  <script src="app/components/editor/editor.component.js"></script>
+  <script src="app/components/editor/editor.service.js"></script>
+
+  <!-- Stateless components  -->
+  <script src="app/components/editor/editor-form/editor-form.component.js"></script>
+  <script src="app/components/editor/editor-html/editor-html.component.js"></script>
+  
+</body>
+</html>
