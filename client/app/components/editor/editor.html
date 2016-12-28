@@ -1,5 +1,14 @@
-<div class="editor" >
-  <h1>Markdown Editor</h1>
-  <editor-form text="$ctrl.text" on-transform-text="$ctrl.transformText($event)" ></editor-form>
-  <editor-html html="$ctrl.html" ></editor-html>
-</div>
+<section class="editor">
+  <h1 class="editor__title" >Markdown Editor</h1>
+  <div class="editor__elements">
+    <div class="editor-form">
+      <editor-form text="$ctrl.text" on-transform-text="$ctrl.transformText($event)" ></editor-form>
+    </div>
+    <div class="editor-html">
+      <editor-html html="$ctrl.html" ></editor-html>
+    </div>
+  </div>
+</section>
+
+
+

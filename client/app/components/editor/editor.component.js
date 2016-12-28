@@ -5,7 +5,7 @@ var editor = {
   controller: function(EditorService) {
 
     this.$onInit = function() {
-      this.text = '';
+      this.text = '# Firebase \n\n## Alcanza el éxito fácilmente con tu app\n\nLas herramientas y la infraestructura que necesitas para crear mejores apps y para lograr el crecimiento de empresas exitosas.';
       this.html = '';
     }    
 

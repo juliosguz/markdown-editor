@@ -10,7 +10,13 @@ var editorForm = {
     
     var lastText;
 
-    this.transformText = function(event) {
+    this.$onInit = function() {
+      if( this.text !== '' ) {
+        this.transformText();
+      }      
+    }
+
+    this.transformText = function() {
 
       // Sending new value to parent component
       if( lastText !== this.text ) {
